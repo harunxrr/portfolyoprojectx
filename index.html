@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="files/style.css">
+    <title>Web Site Portfolio</title>
+</head>
+<body>
+    <section class="banner">
+        <header>
+
+            <a href="#" class="logo"><span>My</span>Portfolyo_</a>
+            <ul style="display:flex;gap: 50px;">
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İşlerim</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <h3>Hey_</h3>
+            <h2>Ben <span id="text"></span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur a voluptate veritatis accusamus. Magnam dolore nihil ab minima, ea reprehenderit.</p>
+            <button>Beni İşe Al</button>
+            <button class="chat"><ion-icon name="chatbubbles-outline"></ion-icon>Sohbet Edelim</button>
+        </div>
+       
+        <img src="images/colors.png" class="colors" alt="">
+        <img src="images/men.png" class="men" alt="">
+        
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+            <li><a href="#"><ion-icon name="logo-skype"></ion-icon></a></li>
+            
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <div class="daynight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+
+
+
+    </section>
+    <!-- ionicons imported -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+
+<script>
+
+    let typingtext = new Typed("#text",{
+        strings : ["Harun","Web Yazılımcı","Web Designer","Kod Yazıcı","Başka Yok xd"],
+        loop : true,
+        typeSpeed : 100,
+        backSpeed : 50,
+        backDelay : 1000,
+
+    })
+
+
+
+    let banner = document.querySelector('.banner');
+    let daynight = document.querySelector('.daynight');
+    let bg=document.querySelector('#b');
+    daynight.onclick = function(){
+        banner.classList.toggle('night');
+        daynight.addclass('agent');
+        
+    }
+  
+
+</script>
+</body>
+</html>
